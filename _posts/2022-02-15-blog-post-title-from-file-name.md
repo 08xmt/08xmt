@@ -19,7 +19,7 @@ Big arbitrage bots look for imbalances in the grand web of trading pairs. Since 
 
 Now these CEX trading pairs are some of the most competitive hunting grounds for the biggest monsters of the Dark Forest[Link to the dark forest article]. They tune their arbitrage smart contracts to be as gas effective as possible, and pay a majority of their profits to miners, through Flashbot auctions. That was way too much heat for a small fish like, I'm just trying to make a little bit of money here.  
 
-![Arbitrage Graph Explainer](simple_arb_graph_explainer.png)
+![Arbitrage Graph Explainer](https://github.com/08xmt/08xmt/blob/main/docs/assets/images/simple_arb_graph_explainer.png?raw=true)
 
 ### Hidden Paths
 I enjoyed arcade racing games a lot as a kid. Mario Kart and Need for Speed especially. A staple of those games are the hidden shortcut. A path you take to shave a few seconds off a lap time, usually requiring specialized knowledge or skill. A similar concept exists in long-tail arbitrage.  
