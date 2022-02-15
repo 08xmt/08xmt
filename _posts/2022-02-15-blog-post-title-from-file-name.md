@@ -25,7 +25,7 @@ I enjoyed arcade racing games a lot as a kid. Mario Kart and Need for Speed espe
 
 When looking for arbitrage in the grand trading pair graph, leaf nodes are generally considered uninteresting. If there's only one way to and from a token, then you're always going to make a loss from visiting it. But not every leaf node is as isolated as it looks. This is where hidden shortcuts come in. Invisible to generalized arbitrage bots, but exploitable by more custom-tooled specimens.  
 
-![Leaf Nodes docs test](./docs/assets/images/leaf_nodes.png)
+![Leaf Nodes docs test](/docs/assets/images/leaf_nodes.png){:target=" blank"}
 
 Enter Pendle. @Pendle is a DeFi protocol for turning variable yield tokens, into fixed yield tokens. The way the protocol accomplishes this is simple: It splits the yield generating token into two distinct tokens; a yield token(yt) representing the yield earned up until maturity, and a collateral token(ot) representing the underlying collateral. To earn a fixed yield, one can supply a yield bearing token, say Aave USDC(aUSDC), split it into ytaUSDC and otaUSDC, sell the ytaUSDC and wait until maturity to redeem the otaUSDC.  
 
