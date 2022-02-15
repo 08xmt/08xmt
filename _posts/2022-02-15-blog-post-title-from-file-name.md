@@ -18,14 +18,14 @@ Big arbitrage bots look for imbalances in the grand web of trading pairs. Since 
 
 Now these CEX trading pairs are some of the most competitive hunting grounds for the biggest monsters of the Dark Forest[Link to the dark forest article]. They tune their arbitrage smart contracts to be as gas effective as possible, and pay a majority of their profits to miners, through Flashbot auctions. That was way too much heat for a small fish like, I'm just trying to make a little bit of money here.  
 
-![Arbitrage Graph Explainer][./_posts/images/simple_arb_graph_explainer.png]
+![Arbitrage Graph Explainer][/_posts/images/simple_arb_graph_explainer.png]
 
 ### Hidden Paths
 I enjoyed arcade racing games a lot as a kid. Mario Kart and Need for Speed especially. A staple of those games are the hidden shortcut. A path you take to shave a few seconds off a lap time, usually requiring specialized knowledge or skill. A similar concept exists in long-tail arbitrage.  
 
 When looking for arbitrage in the grand trading pair graph, leaf nodes are generally considered uninteresting. If there's only one way to and from a token, then you're always going to make a loss from visiting it. But not every leaf node is as isolated as it looks. This is where hidden shortcuts come in. Invisible to generalized arbitrage bots, but exploitable by more custom-tooled specimens.  
 
-![Leaf Nodes][./_posts/images/leaf_nodes.png]
+![Leaf Nodes][/images/leaf_nodes.png]
 
 Enter Pendle. @Pendle is a DeFi protocol for turning variable yield tokens, into fixed yield tokens. The way the protocol accomplishes this is simple: It splits the yield generating token into two distinct tokens; a yield token(yt) representing the yield earned up until maturity, and a collateral token(ot) representing the underlying collateral. To earn a fixed yield, one can supply a yield bearing token, say Aave USDC(aUSDC), split it into ytaUSDC and otaUSDC, sell the ytaUSDC and wait until maturity to redeem the otaUSDC.  
 
