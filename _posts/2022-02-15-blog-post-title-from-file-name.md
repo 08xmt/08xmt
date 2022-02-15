@@ -12,7 +12,7 @@ Arbitrage abound in DeFi and the broader crypto ecosystem. There exist thousands
 
 To model the problem, you can imagine each token being a node in a graph, and each trading pair a weighted edge.  
 
-![Arbitrage Graph](./images/simple_arb_graph.png)
+![Arbitrage Graph](https://github.com/08xmt/08xmt/blob/main/_posts/images/simple_arb_graph.png)
 
 Big arbitrage bots look for imbalances in the grand web of trading pairs. Since tokens can have multiple pairs with other tokens, which in turn have pairs with many of the same tokens. You can imagine how many routes there are to take, and all you have to do is find a route that lands you back, at where you started, with more than you set out with.  
 
@@ -31,7 +31,6 @@ Enter Pendle. @Pendle is a DeFi protocol for turning variable yield tokens, into
 
 However, there's a different mechanism for redeeming your yt and ot. If you have an equal amount of both, you can redeem them for the underlying, before maturity. Here we find our shortcut.  
 
-[Insert drawing of leaf nodes, connected by pendle]
 ![Leaf Nodes Pendle](leaf_nodes_pendle.png)
 
 Now, this shortcut wasn't very enticing for the Aave USDC or Compound DAI pairs. The markets moved slowly, and gas fees would eat most of the profit. Even worse was that I couldn't let the arbitrage get too big, as I noticed a couple of manual arb hunters out there. Respect the hustle though. Luckily, Pendle launched a far more lucrative trade: Fixed yield on Sushiswap LP positions, mainly Pendle-Eth and Eth-USDC. Now these tokens were way more volatile than their interest bearing counterparts. This meant that imbalances moved with the market, and instead of having to wait for a steady stream of interest to cause a profitable imbalance, instead I could merely let the cryptomarket be it's volatile, lovely self, as I was the only one rebalancing this small trading pair.  
