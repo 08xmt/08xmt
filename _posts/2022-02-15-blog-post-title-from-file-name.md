@@ -3,9 +3,10 @@ Inspired by @derked\_eth's recent article on his adventure into the world of lon
 
 This article will feature both an example, and how that example can be generalized to a broader approach for finding hidden MEV opportunities.  
 
----
+---  
 
-### What is Arbitrage?
+### What is Arbitrage?  
+
 "Arbitrage is the simultaneous purchase and sale of the same asset in different markets in order to profit from tiny differences in the asset's listed price. It exploits short-lived variations in the price of identical or similar financial instruments in different markets or in different forms." - Investopedia  
 
 Arbitrage abound in DeFi and the broader crypto ecosystem. There exist thousands of trading pairs between different tokens, and often multiple identical pairs on different DEXes and CEXes.  
@@ -18,7 +19,7 @@ Big arbitrage bots look for imbalances in the grand web of trading pairs. Since 
 
 Now these CEX trading pairs are some of the most competitive hunting grounds for the biggest monsters of the Dark Forest[Link to the dark forest article]. They tune their arbitrage smart contracts to be as gas effective as possible, and pay a majority of their profits to miners, through Flashbot auctions. That was way too much heat for a small fish like, I'm just trying to make a little bit of money here.  
 
-![Arbitrage Graph Explainer](../docs/assets/images/simple_arb_graph_explainer.png)
+![Arbitrage Graph Explainer](simple_arb_graph_explainer.png)
 
 ### Hidden Paths
 I enjoyed arcade racing games a lot as a kid. Mario Kart and Need for Speed especially. A staple of those games are the hidden shortcut. A path you take to shave a few seconds off a lap time, usually requiring specialized knowledge or skill. A similar concept exists in long-tail arbitrage.  
@@ -31,11 +32,11 @@ Enter Pendle. @Pendle is a DeFi protocol for turning variable yield tokens, into
 
 However, there's a different mechanism for redeeming your yt and ot. If you have an equal amount of both, you can redeem them for the underlying, before maturity. Here we find our shortcut.  
 
-![Leaf Nodes Pendle](../docs/assets/images/leaf_nodes_pendle.png)
+![Leaf Nodes Pendle](./docs/assets/images/leaf_nodes_pendle.png)
 
 Now, this shortcut wasn't very enticing for the Aave USDC or Compound DAI pairs. The markets moved slowly, and gas fees would eat most of the profit. Even worse was that I couldn't let the arbitrage get too big, as I noticed a couple of manual arb hunters out there. Respect the hustle though. Luckily, Pendle launched a far more lucrative trade: Fixed yield on Sushiswap LP positions, mainly Pendle-Eth and Eth-USDC. Now these tokens were way more volatile than their interest bearing counterparts. This meant that imbalances moved with the market, and instead of having to wait for a steady stream of interest to cause a profitable imbalance, instead I could merely let the cryptomarket be it's volatile, lovely self, as I was the only one rebalancing this small trading pair.  
 
-![Advanced Graph](../docs/assets/images/advanced_graph.png)
+![Advanced Graph](docs/assets/images/advanced_graph.png)
 
 ### All good things come to an end
 
