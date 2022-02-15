@@ -26,17 +26,17 @@ I enjoyed arcade racing games a lot as a kid. Mario Kart and Need for Speed espe
 
 When looking for arbitrage in the grand trading pair graph, leaf nodes are generally considered uninteresting. If there's only one way to and from a token, then you're always going to make a loss from visiting it. But not every leaf node is as isolated as it looks. This is where hidden shortcuts come in. Invisible to generalized arbitrage bots, but exploitable by more custom-tooled specimens.  
 
-![Leaf Nodes double dot test](../docs/assets/images/leaf_nodes.png)
+![Leaf Nodes double dot test](https://github.com/08xmt/08xmt/blob/main/docs/assets/images/leaf_nodes.png?raw=true)
 
 Enter Pendle. @Pendle is a DeFi protocol for turning variable yield tokens, into fixed yield tokens. The way the protocol accomplishes this is simple: It splits the yield generating token into two distinct tokens; a yield token(yt) representing the yield earned up until maturity, and a collateral token(ot) representing the underlying collateral. To earn a fixed yield, one can supply a yield bearing token, say Aave USDC(aUSDC), split it into ytaUSDC and otaUSDC, sell the ytaUSDC and wait until maturity to redeem the otaUSDC.  
 
 However, there's a different mechanism for redeeming your yt and ot. If you have an equal amount of both, you can redeem them for the underlying, before maturity. Here we find our shortcut.  
 
-![Leaf Nodes Pendle](./docs/assets/images/leaf_nodes_pendle.png)
+![Leaf Nodes Pendle](../docs/assets/images/leaf_nodes_pendle.png?raw=true)
 
 Now, this shortcut wasn't very enticing for the Aave USDC or Compound DAI pairs. The markets moved slowly, and gas fees would eat most of the profit. Even worse was that I couldn't let the arbitrage get too big, as I noticed a couple of manual arb hunters out there. Respect the hustle though. Luckily, Pendle launched a far more lucrative trade: Fixed yield on Sushiswap LP positions, mainly Pendle-Eth and Eth-USDC. Now these tokens were way more volatile than their interest bearing counterparts. This meant that imbalances moved with the market, and instead of having to wait for a steady stream of interest to cause a profitable imbalance, instead I could merely let the cryptomarket be it's volatile, lovely self, as I was the only one rebalancing this small trading pair.  
 
-![Advanced Graph](docs/assets/images/advanced_graph.png)
+![Advanced Graph](./docs/assets/images/advanced_graph.png?raw=true)
 
 ### All good things come to an end
 
