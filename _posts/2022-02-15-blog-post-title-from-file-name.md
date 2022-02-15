@@ -12,7 +12,7 @@ Arbitrage abound in DeFi and the broader crypto ecosystem. There exist thousands
 
 To model the problem, you can imagine each token being a node in a graph, and each trading pair a weighted edge.  
 
-![Arbitrage Graph][./_posts/images/simple_arb_graph.png]
+![Arbitrage Graph][simple_arb_graph.png]
 
 Big arbitrage bots look for imbalances in the grand web of trading pairs. Since tokens can have multiple pairs with other tokens, which in turn have pairs with many of the same tokens. You can imagine how many routes there are to take, and all you have to do is find a route that lands you back, at where you started, with more than you set out with.  
 
