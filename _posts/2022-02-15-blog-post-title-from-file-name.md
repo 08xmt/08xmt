@@ -22,7 +22,7 @@ Big arbitrage bots look for imbalances in the grand web of trading pairs. Since 
 Now these CEX trading pairs are some of the most competitive hunting grounds for the biggest monsters of the [Dark Forest](https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest). They tune their arbitrage smart contracts to be as gas effective as possible, and pay a majority of their profits to miners through Flashbot auctions. To be competitive here, you need to be able to reduce the execution cost of your arbitrage transaction by as much as possible, usually by writing your arb contracts directly in EVM assembly and having a large treasury of tokens. That's way too much heat for a small fish like, I'm just trying to make a little bit of money here, so I went looking elsewhere.
 
 ![Arbitrage Graph Explainer](https://github.com/08xmt/08xmt/blob/main/docs/assets/images/simple_arb_graph_explainer.png?raw=true)  
-*A toy example, most arbitrage yields much smaller returns.*
+*A toy example. Making three transactions, from wETH to DAI to wBTC and back to wETH yields 0.07 wETH. Most arbitrage yields much smaller returns.*
 
 ### Hidden Paths
 I enjoyed arcade racing games a lot as a kid. Mario Kart and Need for Speed especially. A staple of those games are the hidden shortcut. A path you take to shave a few seconds off a lap time, usually requiring specialized knowledge or skill. A similar concept exists in long tail arbitrage.  
