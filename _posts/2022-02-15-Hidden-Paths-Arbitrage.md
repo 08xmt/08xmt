@@ -1,5 +1,5 @@
 ## Hidden Paths and Arbitrage
-Inspired by [@derked\_eth's recent article](https://twitter.com/derked_eth/status/1488330855114289152) on his adventure into the world of long tail MEV, I decided to write about my own story. I want to show that opportunities still exist for searchers, who put an emphasis on understanding protocols, not just searchers with the best black magic compute optimizations.  
+Inspired by [@derked\_eth's (not so) recent article](https://twitter.com/derked_eth/status/1488330855114289152) on his adventure into the world of long tail MEV, I decided to write about my own story. I want to show that opportunities still exist for searchers, who put an emphasis on understanding protocols, not just searchers with the best black magic compute optimizations.  
 
 
 This article will have a quick introduction to arbitrage, explain why most arbitrage is highly competitive, and then showcase less competitive arbitrage opportunities, based on a real world example. 
@@ -34,7 +34,7 @@ When looking for arbitrage in the grand trading pair graph, leaf nodes are gener
 
 Enter [Pendle. Pendle](https://pendle.finance/) is a DeFi protocol for turning variable yield tokens, into fixed yield tokens. The way the protocol accomplishes this is simple: It splits the yield generating token into two distinct tokens; a yield token(yt) representing the yield earned up until maturity, and a collateral token(ot) representing the underlying collateral. To earn a fixed yield, one can supply a yield bearing token, say Aave USDC(aUSDC), split it into ytaUSDC and otaUSDC, sell the ytaUSDC and wait until maturity to redeem the otaUSDC.  
 
-However, there's a different mechanism for redeeming your yt and ot. If you have an equal amount of both, you can redeem them for the underlying, before maturity. Here we find our shortcut.  
+However, there's a different mechanism for redeeming your yt and ot. If you have an equal amount of both, you can redeem them for the underlying, before maturity. Here we find our shortcut, invisible to the generalized arbitrage bots.  
 
 ![Leaf Nodes Pendle](https://github.com/08xmt/08xmt/blob/main/docs/assets/images/leaf_nodes_pendle.png?raw=true)  
 *The cyan Pendle edge allows the creation of 1 ytaUSDC and 1 otaUSDC for 1 aUSDC, opening an arbitrage opportunity.*
